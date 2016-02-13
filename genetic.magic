@@ -51,6 +51,15 @@
 
 
 ###############################################################################
+# CRAM (Binary Sequence Alignment/Map format) 
+###############################################################################
+0	string	CRAM	CRAM
+>0x04	byte	>-1	version %d.
+>0x05	byte	>-1	\b%d
+>0x06   string  >\0     (identified as %s)
+
+
+###############################################################################
 # BCF (Binary Call Format)
 # used by SAMtools & VCFtools (http://vcftools.sourceforge.net/bcf.pdf)
 # data is normally present only within compressed BGZF blocks (CDATA), so use file -z to examine it
